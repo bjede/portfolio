@@ -1,0 +1,21 @@
+.my-work__btn-container {
+
+    .my-work__btn{
+        color: white;
+        border: 0.1rem solid var(--c-primary);
+        background-color: transparent;
+        padding: 0.8rem 1.2rem;
+        margin-right: 1rem;
+        transition: all 225ms ease-in-out;
+
+        &:hover {
+            background-color: var(--c-primary);
+        }
+    }
+
+    .my-work__btn:nth-child(3) {
+        margin-right: 0;
+    }
+
+
+}
