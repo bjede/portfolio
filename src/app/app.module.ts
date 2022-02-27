@@ -9,6 +9,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MainMenuComponent,
     SkillsComponent,
     MyWorkComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
