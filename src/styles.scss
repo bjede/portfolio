@@ -11,7 +11,6 @@
 .headline {
     padding-bottom: 1.7rem;
     position: relative;
-    margin-bottom: 3rem;
 
     &::after{
         content: '';
@@ -24,6 +23,22 @@
         background-color: var(--c-primary);
         margin: auto;
     }
+}
+
+.mb-s {
+    margin-bottom: 3rem;
+}
+
+.mb-m {
+    margin-bottom: 5rem;
+}
+
+.mb-l {
+    margin-bottom: 7rem;
+}
+
+.mb-xl {
+    margin-bottom: 9rem;
 }
 
 
