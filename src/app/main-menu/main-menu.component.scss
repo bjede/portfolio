@@ -3,6 +3,17 @@
     transition: all 125ms ease-in-out;
 }
 
+.nav__logo-link {
+    display: block;
+}
+
+.nav__logo {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: contain;
+}
+
 .nav__list {
     margin: 0;
     padding: 0;
