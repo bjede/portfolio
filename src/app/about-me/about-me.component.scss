@@ -1,0 +1,10 @@
+.about-me {
+    background-color: var(--c-grey);
+}
+
+.about-me__image {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
