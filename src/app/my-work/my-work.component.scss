@@ -16,6 +16,62 @@
     .my-work__btn:nth-child(3) {
         margin-right: 0;
     }
+}
 
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
 
+    img {
+        transition: all 500ms ease-in-out;
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: translateY(100%);
+        transition: all 125ms 500ms ease-in-out;
+    }
+
+    &:hover::after {
+        transform: translateY(0);
+        transition: all 125ms ease-in-out;
+    }
+}
+
+.card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all 125ms 225ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    .btn {
+        background-color: var(--c-primary);
+    }
+}
+
+.card:hover .card-body {
+    transform: translateY(0);
+}
+
+.card:hover img {
+    filter: blur(5px);
+    transition: all 225ms ease-in-out;
 }
