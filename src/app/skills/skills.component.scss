@@ -1,0 +1,33 @@
+.skills {
+    background-color: var(--c-grey);
+}
+
+.skills__card {
+    position: relative;
+    background-color: white;
+    height: 9rem;
+}
+
+.skills__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 1.2rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.mb-6 {
+    margin-bottom: 5rem !important;
+}
