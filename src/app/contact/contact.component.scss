@@ -1,6 +1,4 @@
 .contact__form {
-
-
     button {
         width: 100%;
         background-color: var(--c-primary);
@@ -8,5 +6,40 @@
 
     textarea {
         resize: none;
+    }
+}
+
+.form-label {
+    color: #cfcfcf;
+}
+
+.contact__icon {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    filter: invert(1);
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.contact__adress,
+.contact__direct,
+.contact__web {
+    margin-bottom: 1.5rem;
+    color: #cfcfcf;
+
+    p {
+        margin-bottom: 0.05rem;
+    }
+
+    a {
+        color: #228af9;
+        text-decoration: none;
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            text-decoration: underline;
+            color: #76afeb;
+        }
     }
 }
