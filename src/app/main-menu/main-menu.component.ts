@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(public viewPortScroller: ViewportScroller) { }
 
   ngOnInit(): void {
+  }
+
+  scrollToPosition(id: string){
+    this.viewPortScroller.scrollToAnchor(id);
   }
 
 }
