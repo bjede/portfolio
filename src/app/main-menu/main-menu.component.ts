@@ -22,6 +22,10 @@ export class MainMenuComponent implements OnInit {
     this.viewPortScroller.scrollToAnchor(id);
   }
 
+  scrollToTop() {
+    this.viewPortScroller.scrollToPosition([0,0]);
+  }
+
   addClassByScroll() {
     if(window.scrollY > 150) {
       document.querySelector('.nav')?.classList.add('bg-scroll');
