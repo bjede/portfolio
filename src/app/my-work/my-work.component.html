@@ -2,44 +2,18 @@
     <div class="container">
         <h2 data-aos="fade-right" class="headline mb-s text-uppercase text-center text-white">My work</h2>
         <div class="my-work__btn-container d-flex justify-content-center align-items-center pb-5">
-            <button data-aos="zoom-in" data-aos-delay="600" class="my-work__btn text-uppercase">All</button>
-            <button data-aos="zoom-in" data-aos-delay="800" class="my-work__btn text-uppercase">Angular</button>
-            <button data-aos="zoom-in" data-aos-delay="5000" class="my-work__btn text-uppercase">Javascript</button>
+            <button (click)="showAllProjects()" data-aos="zoom-in" data-aos-delay="600" class="my-work__btn text-uppercase">All</button>
+            <button (click)="showCurrentProjects('angular')" data-aos="zoom-in" data-aos-delay="800" class="my-work__btn text-uppercase">Angular</button>
+            <button (click)="showCurrentProjects('javascript')" data-aos="zoom-in" data-aos-delay="5000" class="my-work__btn text-uppercase">Javascript</button>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div data-aos="flip-left" data-aos-duration="1000" class="card border-0 bg-transparent text-white">
-                    <img src="/assets/images/coding.jpg" class="card-img-top" alt="...">
+            <div *ngFor="let project of currentProjects" class="col col-12 col-sm-6 col-lg-4">
+                <div data-aos="flip-left" data-aos-duration="1000" class="card mt-4 border-0 bg-transparent text-white">
+                    <img src="{{ project.img }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn text-white text-uppercase">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div data-aos="flip-left" data-aos-duration="1000" class="card border-0 bg-transparent text-white">
-                    <img src="/assets/images/coding.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn text-white text-uppercase">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div data-aos="flip-left" data-aos-duration="1000" class="card border-0 bg-transparent text-white">
-                    <img src="/assets/images/coding.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn text-white text-uppercase">Go somewhere</a>
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        <a target="_blank" href="{{ project.link }}" class="btn text-white text-uppercase">Check it out</a>
                     </div>
                 </div>
             </div>
