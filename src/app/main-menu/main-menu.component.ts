@@ -34,4 +34,9 @@ export class MainMenuComponent implements OnInit {
     }
   }
 
+  burgerMenuToggle() {
+    document.getElementById('menu-toggle')?.classList.toggle('active');
+    document.getElementById('menu-mobile')?.classList.toggle('active');
+  }
+
 }
