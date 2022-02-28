@@ -3,7 +3,7 @@
         <a href="#" class="nav__logo-link">
             <img class="nav__logo" src="/assets/icons/logo4.png" alt="">
         </a>
-        <ul class="nav__list d-flex align-items-center">
+        <ul class="nav__list menu-desktop d-flex align-items-center">
             <li class="nav__list-item">
                 <a (click)="scrollToTop()" href="#home" class="nav__link">
                     Home
@@ -30,5 +30,38 @@
                 </a>
             </li>
         </ul>
+        <ul id="menu-mobile" class="navbar__mobile">
+            <li class="navbar__mobile-list-item">
+                <a (click)="scrollToTop()" href="#home" class="nav__mobile-link">
+                    Home
+                </a>
+            </li>
+            <li class="navbar__mobile-list-item">
+                <a (click)="scrollToPosition('skills')" href="#skills" class="nav__mobile-link">
+                    Skills
+                </a>
+            </li>
+            <li class="navbar__mobile-list-item">
+                <a (click)="scrollToPosition('about')" href="#about-me" class="nav__mobile-link">
+                    About
+                </a>
+            </li>
+            <li class="navbar__mobile-list-item">
+                <a (click)="scrollToPosition('projects')" href="#projects" class="nav__mobile-link">
+                    Projects
+                </a>
+            </li>
+            <li class="navbar__mobile-list-item">
+                <a (click)="scrollToPosition('contact')" href="#projects" class="nav__mobile-link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <section class="only-mobile">
+            <input (click)="burgerMenuToggle()" id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+        </section>
     </div>
 </nav>
