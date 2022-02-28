@@ -11,6 +11,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     MyWorkComponent,
     AboutMeComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,
