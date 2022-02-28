@@ -4,14 +4,13 @@
             <h2 class="headline mb-s text-uppercase text-center text-white">Contact me</h2>
 
 
-            <div class="col-12 col-md-6">
-                <address>
+            <div class="col-12">
+                <address class="d-flex justify-content-between">
                     <div class="contact__adress">
                         <img class="contact__icon" src="/assets/icons/location.png" alt="">
                         <h5>Address</h5>
                         <p>Ankershofenstraße 8</p>
                         <p>9020 Klagenfurt</p>
-                        <p>Österreich</p>
                     </div>
                     <div class="contact__direct">
                         <img class="contact__icon" src="/assets/icons/phone.png" alt="">
@@ -28,10 +27,19 @@
             </div>
 
             <div class="col-12 col-md-6">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=%C3%96sterreich,%20Ankershofenstra%C3%9Fe%208&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
                 <form class="contact__form">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control rounded-0" id="name">
+                        <input type="text" placeholder="Name" class="form-control rounded-0" id="name">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
@@ -39,7 +47,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="text-area" class="form-label">Message</label>
-                        <textarea class="form-control rounded-0" id="text-area" rows="6"></textarea>
+                        <textarea placeholder="Message" class="form-control rounded-0" id="text-area"
+                            rows="6"></textarea>
                     </div>
                     <button type="submit" class="btn rounded-0 text-white text-uppercase">Submit</button>
                 </form>
