@@ -13,38 +13,44 @@ export class MyWorkComponent implements OnInit {
     {
       title: 'El pollo loco',
       description: 'Some quick example text to build on the card title and make up the bulk of the card',
-      img: '/assets/images/ellpolloloco.jpg',
+      img: 'assets/images/ellpolloloco.jpg',
       link: 'http://aldin-bijedic.developerakademie.net/el_pollo_loco/',
       category: 'javascript'
     }, {
       title: 'Pokedex',
       description: 'Some quick example text to build on the card title and make up the bulk of the card',
-      img: '/assets/images/pokedex.jpg',
+      img: 'assets/images/pokedex.jpg',
       link: 'http://aldin-bijedic.developerakademie.net/pokeapi/pokedex/',
       category: 'javascript'
     }, {
       title: 'Instagram',
       description: 'Some quick example text to build on the card title and make up the bulk of the card',
-      img: '/assets/images/instagram.jpg',
+      img: 'assets/images/instagram.jpg',
       link: 'http://aldin-bijedic.developerakademie.net/instagram/',
       category: 'javascript'
     }, {
       title: 'Lieferando',
       description: 'Some quick example text to build on the card title and make up the bulk of the card',
-      img: '/assets/images/lieferando.jpg',
+      img: 'assets/images/lieferando.jpg',
       link: 'http://aldin-bijedic.developerakademie.net/lieferando/',
       category: 'javascript'
     }, {
       title: 'Tic tac toe',
       description: 'Some quick example text to build on the card title and make up the bulk of the card',
-      img: '/assets/images/tictactoe.jpg',
+      img: 'assets/images/tictactoe.jpg',
       link: 'http://aldin-bijedic.developerakademie.net/tictactoe/',
-      category: 'angular'
+      category: 'javascript'
     }, {
       title: 'Quizapp',
       description: 'Some quick example text to build on the card title and make up the bulk of the card',
-      img: '/assets/images/quizapp.jpg',
+      img: 'assets/images/quizapp.jpg',
       link: 'http://aldin-bijedic.developerakademie.net/Quizapp/',
+      category: 'javascript'
+    }, {
+      title: 'Portfolio',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card',
+      img: 'assets/images/portfolio.jpg',
+      link: 'http://aldin-bijedic.developerakademie.net/portfolio/',
       category: 'angular'
     }
   ]
