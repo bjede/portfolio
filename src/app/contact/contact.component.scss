@@ -14,8 +14,6 @@
         }
     }
 
-
-
     textarea {
         resize: none;
     }
@@ -31,20 +29,23 @@
     color: #cfcfcf;
 }
 
-.contact__icon {
-    width: 2rem;
-    height: 2rem;
-    object-fit: contain;
-    filter: invert(1);
-    display: block;
-    margin-bottom: 0.8rem;
-}
-
 .contact__adress,
 .contact__direct,
 .contact__web {
     margin-bottom: 1.5rem;
     color: #cfcfcf;
+    min-width: 10rem;
+    text-align: center;
+
+    .contact__icon {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+        filter: invert(1);
+        display: block;
+        margin-bottom: 0.8rem;
+        margin: 0 auto 1rem auto;
+    }
 
     p {
         margin-bottom: 0.05rem;
