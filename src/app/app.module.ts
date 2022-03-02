@@ -12,6 +12,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { SrcrollTopComponent } from './srcroll-top/srcroll-top.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     AboutMeComponent,
     ContactComponent,
     FooterComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    SrcrollTopComponent
   ],
   imports: [
     BrowserModule,
