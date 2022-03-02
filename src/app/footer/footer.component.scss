@@ -6,10 +6,17 @@
         &:hover {
             text-decoration: underline;
         }
+
+        img {
+            transition: all 125ms ease-in-out;
+            &:hover {
+                filter: invert(40%);
+            }
+        }
     }
 }
 .social-media {
-    img{
+    img {
         display: block;
         width: 2rem;
         height: 2rem;
@@ -20,5 +27,4 @@
     a:nth-child(3) > img {
         margin-right: 0;
     }
-    
 }
