@@ -21,12 +21,12 @@ export class ContactComponent implements OnInit {
     form.append('message', message);
 
     fetch('http://aldin-bijedic.developerakademie.net/portfolio/send_mail.php', {
-      method: 'POST', // or 'PUT'
+      method: 'POST',
       body: form,
     })
       .then(response => response)
       .then(data => {
-        console.log('Success:', data.url);
+        console.log('Success:', data);
       });
 
 
