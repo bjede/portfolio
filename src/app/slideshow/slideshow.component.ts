@@ -1,5 +1,5 @@
-import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { EventsService } from '../events.service';
 // @ts-ignore
 import Typewriter from 't-writer.js';
 @Component({
@@ -12,7 +12,7 @@ export class SlideshowComponent implements OnInit {
   images = ['bg1', 'bg2', 'bg3', 'bg4'];
   currentImage = 0;
 
-  constructor(public viewPortScroller: ViewportScroller) { }
+  constructor(public scroll: EventsService) { }
 
   ngOnInit(): void {
     this.slideShow();
@@ -56,7 +56,7 @@ export class SlideshowComponent implements OnInit {
   }
 
   scrollToPosition(id: string){
-    this.viewPortScroller.scrollToAnchor(id);
+    this.scroll.scrollToPosition(id);
   }
 
 }
