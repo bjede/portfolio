@@ -29,6 +29,12 @@
     color: #cfcfcf;
 }
 
+.address {
+    @media (max-width: 43em){
+        justify-content: center !important;
+    }
+}
+
 .contact__adress,
 .contact__direct,
 .contact__web {
@@ -36,6 +42,12 @@
     color: #cfcfcf;
     min-width: 10rem;
     text-align: center;
+
+    @media (max-width: 43em){
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
 
     .contact__icon {
         width: 2rem;
