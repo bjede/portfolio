@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 mb-3">
-                <form data-aos="fade-left" data-aos-duration="1500" class="contact__form mt-4">
+                <form id="login-form" (submit)="false" data-aos="fade-left" data-aos-duration="1500" class="contact__form mt-4">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" placeholder="Enter your Name" class="form-control rounded-0" id="name">
@@ -46,7 +46,7 @@
                         <textarea placeholder="Enter your Message" class="form-control rounded-0" id="text-area"
                             rows="6"></textarea>
                     </div>
-                    <button type="submit" class="btn rounded-0 text-white text-uppercase">Submit</button>
+                    <button (click)="send()" class="btn rounded-0 text-white text-uppercase">Submit</button>
                 </form>
             </div>
         </div>
