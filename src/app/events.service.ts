@@ -11,4 +11,8 @@ export class EventsService {
   scrollToTop(x: number, y: number){
     this.viewPortScroller.scrollToPosition([x,y]);
   }
+
+  scrollToPosition(id: string){
+    this.viewPortScroller.scrollToAnchor(id);
+  }
 }
