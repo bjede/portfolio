@@ -12,4 +12,24 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  send() {
+    let name = (<HTMLInputElement>document.getElementById('name')).value;
+    let message = (<HTMLInputElement>document.getElementById('text-area')).value;
+
+    let form = new FormData();
+    form.append('name', name);
+    form.append('message', message);
+
+    fetch('http://aldin-bijedic.developerakademie.net/portfolio/send_mail.php', {
+      method: 'POST', // or 'PUT'
+      body: form,
+    })
+      .then(response => response)
+      .then(data => {
+        console.log('Success:', data.url);
+      });
+
+
+  }
+
 }
