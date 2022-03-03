@@ -27,9 +27,21 @@ export class ContactComponent implements OnInit {
       .then(response => response)
       .then(data => {
         console.log('Success:', data);
+        (<HTMLInputElement>document.getElementById('name')).value = '';
+        (<HTMLInputElement>document.getElementById('email')).value = '';
+        (<HTMLInputElement>document.getElementById('text-area')).value = '';
+        this.showSendMessage();
       });
+  }
 
+  showSendMessage() {
+    (<HTMLInputElement>document.getElementById('send-btn')).textContent = 'Succesfully send message.';
+    (<HTMLElement>document.getElementById('send-btn')).classList.add('send');
 
+    setTimeout(() => {
+      (<HTMLInputElement>document.getElementById('send-btn')).textContent = 'Send message';
+      (<HTMLElement>document.getElementById('send-btn')).classList.remove('send');
+    }, 5000);
   }
 
 }
