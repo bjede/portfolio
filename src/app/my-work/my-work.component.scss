@@ -66,6 +66,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    text-align: center;
     transform: translateY(100%);
     transition: all 125ms 225ms ease-in-out;
     display: flex;
@@ -74,6 +75,9 @@
     align-items: center;
     z-index: 10;
 
+    p {
+        font-size: 0.9rem;
+    }
     .btn {
         background-color: var(--c-primary);
     }
