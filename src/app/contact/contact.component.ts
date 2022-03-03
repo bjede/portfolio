@@ -35,7 +35,7 @@ export class ContactComponent implements OnInit {
   }
 
   showSendMessage() {
-    (<HTMLInputElement>document.getElementById('send-btn')).textContent = 'Succesfully send message.';
+    (<HTMLInputElement>document.getElementById('send-btn')).textContent = 'Email sent successfully.';
     (<HTMLElement>document.getElementById('send-btn')).classList.add('send');
 
     setTimeout(() => {
