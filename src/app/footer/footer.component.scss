@@ -1,5 +1,7 @@
 .footer {
     position: relative;
+    background-color: white;
+
     a {
         text-decoration: none;
         transition: all 225ms ease-in-out;
@@ -15,6 +17,11 @@
         }
     }
 }
+
+.bg-grey {
+    background-color: rgb(243, 243, 243);
+}
+
 .social-media {
     img {
         display: block;
