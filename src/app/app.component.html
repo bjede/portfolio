@@ -1,6 +1,8 @@
-<app-header></app-header>
-<app-skills></app-skills>
-<app-my-work></app-my-work>
-<app-about-me></app-about-me>
-<app-contact></app-contact>
+<app-header *ngIf="router.url != '/imprint'"></app-header>    
+<app-main-menu></app-main-menu>
+<app-skills *ngIf="router.url != '/imprint'"></app-skills>
+<app-my-work *ngIf="router.url != '/imprint'"></app-my-work>
+<app-about-me *ngIf="router.url != '/imprint'"></app-about-me>
+<app-contact *ngIf="router.url != '/imprint'"></app-contact>
+<app-imprint *ngIf="router.url === '/imprint'"></app-imprint>
 <app-footer></app-footer>
