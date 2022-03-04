@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { SrcrollTopComponent } from './srcroll-top/srcroll-top.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SrcrollTopComponent } from './srcroll-top/srcroll-top.component';
     ContactComponent,
     FooterComponent,
     SlideshowComponent,
-    SrcrollTopComponent
+    SrcrollTopComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,
