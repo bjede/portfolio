@@ -1,7 +1,7 @@
-<footer class="footer pt-3 pb-3 bg-white">
+<footer [class.bg-grey]="router.url === '/imprint'" class="footer pt-3 pb-3">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="imprint">
-            <a href="">Imprint</a>
+            <a routerLink="imprint">Imprint</a>
         </div>
         <div class="social-media d-flex align-items-center">
             <a target="_blank" href="https://github.com/bjede">
