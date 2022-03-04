@@ -1,5 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-menu',
@@ -10,7 +11,7 @@ export class MainMenuComponent implements OnInit {
 
   changeColor = false;
 
-  constructor(public viewPortScroller: ViewportScroller) { }
+  constructor(public viewPortScroller: ViewportScroller, public router: Router) { }
 
   @HostListener('window:scroll', ['$event.target'])
 
