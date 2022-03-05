@@ -20,6 +20,7 @@ export class MainMenuComponent implements OnInit {
   }
 
   scrollToPosition(id: string){
+    document.getElementById('menu-mobile')?.classList.remove('active');
     this.viewPortScroller.scrollToAnchor(id);
   }
 
