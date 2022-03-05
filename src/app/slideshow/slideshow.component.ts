@@ -9,7 +9,7 @@ import Typewriter from 't-writer.js';
 })
 export class SlideshowComponent implements OnInit {
 
-  images = ['bg1', 'bg2', 'bg3', 'bg4'];
+  images = ['bg1', 'bg2', 'bg3'];
   currentImage = 0;
 
   constructor(public scroll: EventsService) { }
