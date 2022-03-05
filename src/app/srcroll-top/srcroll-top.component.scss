@@ -7,12 +7,15 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: 3.1rem;
-    height: 3.1rem;
+    width: 2.9rem;
+    height: 2.9rem;
     background-color: var(--c-primary);
     border-radius: 100%;
     transform: translateY(-50%);
     cursor: pointer;
+    padding: 0.2rem;
+    transition: all 125ms ease-in-out;
+    animation: fadeIn 500ms ease-in-out both;
 
     &::after {
         content: '';
@@ -22,5 +25,18 @@
         object-fit: contain;
         background-image: url('./../../assets/icons/expand-less.png');
         background-size: contain;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-50%);
+        opacity: 1;
     }
 }
