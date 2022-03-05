@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   title = 'portfolio';
 
-  constructor(public router: Router) {}
+  constructor(public router: Router) { }
   
   ngOnInit(): void {
     Aos.init();
