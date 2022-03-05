@@ -24,7 +24,7 @@ export class SrcrollTopComponent implements OnInit {
     checkIsScrollBottom(event: Window) {
       const bodyHeight = document.body.scrollHeight;
       const scrollDown = window.scrollY +  window.innerHeight;
-      (scrollDown == bodyHeight ) ? this.scrollToTopAnimation = true : this.scrollToTopAnimation = false;
+      (Math.round(scrollDown) == Math.round(bodyHeight) ) ? this.scrollToTopAnimation = true : this.scrollToTopAnimation = false;
     }
 
 }
