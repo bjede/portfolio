@@ -26,6 +26,7 @@ export class MainMenuComponent implements OnInit {
   }
 
   scrollToTop() {
+    document.getElementById('menu-toggle')?.classList.remove('active');
     document.getElementById('menu-mobile')?.classList.remove('active');
     this.viewPortScroller.scrollToPosition([0,0]);
   }
