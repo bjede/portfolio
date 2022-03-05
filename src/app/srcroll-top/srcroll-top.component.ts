@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Scroll } from '@angular/router';
 
 @Component({
@@ -9,13 +9,22 @@ import { Scroll } from '@angular/router';
 })
 export class SrcrollTopComponent implements OnInit {
 
-  constructor(public scroll: ViewportScroller) { }
+  scrollToTopAnimation: boolean = false;
 
+  constructor(public scroll: ViewportScroller) { }
+  
   ngOnInit(): void {
   }
 
   scrollToTop() {
     this.scroll.scrollToPosition([0,0]);
   }
+
+  @HostListener('window:scroll', ['$event']) 
+    checkIsScrollBottom(event: Window) {
+      const bodyHeight = document.body.scrollHeight;
+      const scrollDown = window.scrollY +  window.innerHeight;
+      (scrollDown == bodyHeight ) ? this.scrollToTopAnimation = true : this.scrollToTopAnimation = false;
+    }
 
 }
